@@ -2,22 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NouveauComponent } from './nouveau/nouveau.component';
-import { PremierComposantComponent } from './nouveau/premier-composant.component';
-import { DeuxiemeComposantComponent } from './nouveau/deuxieme-composant.component';
-import { TroisiemeComposantComponent } from './nouveau/troisieme-composant.component';
-import { QuatriemeComposantComponent } from './nouveau/quatrieme-composant.component';
-import { BouhComponent } from './bouh/bouh.component';
+import { BlablaComponent } from './blabla/blabla.component';
+import { PremierComposantComponent } from './premier-composant/premier-composant.component';
+import { DeuxiemeComposantComponent } from './deuxieme-composant/deuxieme-composant.component';
+import { TroisiemeComposantComponent } from './troisieme-composant/troisieme-composant.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NouveauComponent,
+    BlablaComponent,
     PremierComposantComponent,
     DeuxiemeComposantComponent,
     TroisiemeComposantComponent,
-    QuatriemeComposantComponent,
-    BouhComponent,
   ],
   imports: [
     BrowserModule
