@@ -1,0 +1,16 @@
+<div class="row">
+  <label for="name">Name</label>
+  <input class="form-control col-md-2" name="name" type="text" #nUser>
+</div>
+<br>
+<div class="row">
+  <label for="firstname">Firstname </label>
+  <input class="form-control col-md-2" name="firstname" type="text" #nUser>
+</div>
+<br>
+<div class="row">
+  <label for="birhtday">Birthday </label>
+  <input class="form-control col-md-2" name="birthday" type="date" #nUser>
+</div>
+<br>
+<input type="submit" class="btn btn-success col-md-1" (click)="addUser(nUser)" value="Validate">
