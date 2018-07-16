@@ -6,6 +6,8 @@ import { NewUserComponent } from './container/new-user/new-user.component';
 import { UsersComponent } from './container/users/users.component';
 import { ContainerComponent } from './container/container.component';
 import { FormsModule } from '@angular/forms';
+import { UsersListComponent } from './container/users/users-list/users-list.component';
+import { UsersDetailsComponent } from './container/users/users-details/users-details.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { FormsModule } from '@angular/forms';
     NewUserComponent,
     UsersComponent,
     ContainerComponent,
+    UsersListComponent,
+    UsersDetailsComponent,
   ],
   imports: [
     BrowserModule,

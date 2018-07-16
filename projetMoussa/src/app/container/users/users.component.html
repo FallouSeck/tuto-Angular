@@ -1,24 +1,4 @@
-<div class="row">
-  <div class="list-group col-md-4">
-    <h3 style="text-align: center">Users</h3>
-    <a href="#"
-      (click)="showDetails(index)"
-      *ngFor="let User of users; let index = index"
-      class="list-group-item list-group-item-action">
-      {{User.firstname}}
-    </a>
-
-    
-  </div>
-  <div class="col-md-8">
-    <h3 style="text-align: center">Details</h3>
-    <div class="details">
-      <p>
-        Name:  <br>
-        Firstname:  <br>
-        Birthday:  <br>
-        Age:
-      </p>
-    </div>
-  </div>
+<div class="container-fluid row">
+  <app-users-list class="col-md-6" (pickEvent)=showDetails($event) [users]='users'></app-users-list>
+  <app-users-details class="col-md-6" [user]='user'></app-users-details>
 </div>

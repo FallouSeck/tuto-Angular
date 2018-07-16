@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { User } from '../../shared/user.model';
+// import { Output } from '@angular/core/src/metadata/directives';
 
 @Component({
   selector: 'app-users',
@@ -9,9 +10,17 @@ import { User } from '../../shared/user.model';
 export class UsersComponent implements OnInit {
   @Input() users: User[];
 
+  public user: User;
+
   constructor() { }
 
   ngOnInit() {
+    this.user = this.users[0];
   }
+
+  showDetails(index: number): void{
+    this.user = this.users[index];
+  }
+
  
 }

@@ -11,7 +11,7 @@ export class ContainerComponent implements OnInit {
   public users : User[] = [
     new User ('Seck', 'Fadel', '19/07/1992'),
     new User ('Seck', 'Mariamawit', '10/10/1992'),
-    new User ('Seck', 'Fadel', '28/08/1996')
+    new User ('Seck', 'Mame Thiané', '28/08/1996')
   ];
 
   public user: User;
@@ -19,10 +19,14 @@ export class ContainerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.user = this.users[0];
   }
 
-  addUser(reference: any){
-    this.users.push(reference.value);
-  }
+  // addUser(reference: any){
+  //   this.users.push(reference.value);
+  // }
+    showDetails(index: number): void {
+      this.user = this.users[index];
+    }
 
 }
